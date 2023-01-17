@@ -1,0 +1,64 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Software Testing 2022/23 Portfolio}
+\author{Matthew Davidson}
+
+\begin{document}
+\maketitle
+
+\section{Outline of the Software Being Tested}
+The software I will be testing is from my Informatics Large Practical project. This software (called PizzaDronz) is an online Pizza ordering system
+
+\section{Learning Outcomes}
+\textit{This is the main part of the portfolio where you describe how you have gone about meeting each of the sub-criteria.}
+\begin{enumerate}
+\item \textbf{Analyze requirements to determine appropriate testing strategies} \marginpar{[default 20\%]}
+\begin{enumerate}
+\item \textbf{Range of requirements, functional requirements, measurable quality attributes, qualitative requirements}
+\item \textbf{Level of requirements, system, integration, unit}
+\item \textbf{Identifying test approach for chosen attributes}
+\item \textbf{Assess the appropriateness of your chosen testing approach}
+\end{enumerate}
+\item \textbf{Design and implement comprehensive test plans with instrumented code} \marginpar{[default 20\%]}
+\begin{enumerate}
+\item \textbf{Construction of the test plan}
+\item \textbf{Evaluation of the quality of the test plan}
+\item \textbf{Instrumentation of the code}
+\item \textbf{Evaluation of the instrumentation}
+\end{enumerate}
+\item \textbf{Apply a wide variety of testing techniques and compute test coverage and yield according to a variety of criteria} \marginpar{[default 20\%]}
+\begin{enumerate}
+\item\textbf{Range of techniques}
+\item\textbf{Evaluation criteria for the adequacy of the testing}
+\item \textbf{Results of testing}
+\item \textbf{Evaluation of the results}
+\end{enumerate}
+\item \textbf{Evaluate the limitations of a given testing process, using statistical methods where appropriate, and summarise outcomes} \marginpar{[default 20\%]}
+\begin{enumerate}
+\item \textbf{Identifying gaps and omissions in the testing process}
+\item \textbf{Identifying target coverage/performance levels for the different testing procedures} 
+\item \textbf{Discussing how the testing carried out compares with the target levels}
+\item \textbf{Discussion of what would be necessary to achieve the target level}
+\end{enumerate}
+\item \textbf{Conduct reviews, inspections, and design and implement automated testing processes} \marginpar{[default 20\%]}
+\begin{enumerate}    
+\item \textbf{Identify and apply review criteria to selected parts of the code and identify issues in the code}
+\item \textbf{Construct an appropriate CI pipeline for the software}
+\item\textbf{Automate some aspects of the testing}
+\item \textbf{Demonstrate the CI pipeline functions as expected}
+\end{enumerate}
+\end{enumerate}
+\end{document}
