@@ -29,13 +29,19 @@ This graph is used to path find from Appleton Tower to each of the restaurants. 
 
 \section{Learning Outcomes}
 \begin{enumerate}
+%---------LO 1------------------------------------------
 \item \textbf{Analyze requirements to determine appropriate testing strategies} \marginpar{[20\%]}
 \begin{enumerate}
-\item \textbf{Range of requirements, functional requirements, measurable quality attributes, qualitative requirements}
-\item \textbf{Level of requirements, system, integration, unit}
+  \item \textbf{Range of requirements, functional requirements, measurable quality attributes, qualitative requirements}: see \texttt{requirements.pdf}
+\item \textbf{Level of requirements, system, integration, unit}: see \texttt{requirements.pdf}
 \item \textbf{Identifying test approach for chosen attributes}
+    
+I chose to test my project after having performed the design and implementation activities. 
 \item \textbf{Assess the appropriateness of your chosen testing approach}
+
+Ultimately this was an appropriate testing approach, as the specification had already been given to me and it was just a 
 \end{enumerate}
+%---------LO 2------------------------------------------
 \item \textbf{Design and implement comprehensive test plans with instrumented code} \marginpar{[default 20\%]}
 \begin{enumerate}
 \item \textbf{Construction of the test plan}
@@ -43,6 +49,7 @@ This graph is used to path find from Appleton Tower to each of the restaurants. 
 \item \textbf{Instrumentation of the code}
 \item \textbf{Evaluation of the instrumentation}
 \end{enumerate}
+%---------LO 3------------------------------------------
 \item \textbf{Apply a wide variety of testing techniques and compute test coverage and yield according to a variety of criteria} \marginpar{[default 20\%]}
 \begin{enumerate}
 \item\textbf{Range of techniques}
@@ -50,6 +57,7 @@ This graph is used to path find from Appleton Tower to each of the restaurants. 
 \item \textbf{Results of testing}
 \item \textbf{Evaluation of the results}
 \end{enumerate}
+%---------LO 4------------------------------------------
 \item \textbf{Evaluate the limitations of a given testing process, using statistical methods where appropriate, and summarise outcomes} \marginpar{[default 20\%]}
 \begin{enumerate}
 \item \textbf{Identifying gaps and omissions in the testing process}
@@ -57,8 +65,9 @@ This graph is used to path find from Appleton Tower to each of the restaurants. 
 \item \textbf{Discussing how the testing carried out compares with the target levels}
 \item \textbf{Discussion of what would be necessary to achieve the target level}
 \end{enumerate}
+%---------LO 5------------------------------------------
 \item \textbf{Conduct reviews, inspections, and design and implement automated testing processes} \marginpar{[default 20\%]}
-\begin{enumerate}    
+\begin{enumerate}
 \item \textbf{Identify and apply review criteria to selected parts of the code and identify issues in the code}
 \item \textbf{Construct an appropriate CI pipeline for the software}
 \item\textbf{Automate some aspects of the testing}
