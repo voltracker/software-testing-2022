@@ -32,14 +32,22 @@ This graph is used to path find from Appleton Tower to each of the restaurants. 
 %---------LO 1------------------------------------------
 \item \textbf{Analyze requirements to determine appropriate testing strategies} \marginpar{[20\%]}
 \begin{enumerate}
-  \item \textbf{Range of requirements, functional requirements, measurable quality attributes, qualitative requirements}: see \texttt{requirements.pdf}
-\item \textbf{Level of requirements, system, integration, unit}: see \texttt{requirements.pdf}
+  \item \textbf{Range of requirements, functional requirements, measurable quality attributes, qualitative requirements}
+
+    see \texttt{requirements.pdf}
+\item \textbf{Level of requirements, system, integration, unit}
+
+  see \texttt{requirements.pdf}
 \item \textbf{Identifying test approach for chosen attributes}
     
 I chose to test my project after having performed the design and implementation activities. 
+
 \item \textbf{Assess the appropriateness of your chosen testing approach}
 
-Ultimately this was an appropriate testing approach, as the specification had already been given to me and it was just a 
+Ultimately this was an appropriate testing approach, as the specification had already been given to me and it was just a case of choosing how I wanted to structure the system and implement it. The chosen approach worked sufficiently however I think that choosing a test driven development approach may haveallowed me to be more productive as it allows me to measure my progress more readily and set deadlines accordingly.
+
+However due to the constrained time I had on this project, it may not have been feasible to write tests beforehand, as finishing the implementation was a higher priority than the overall correctness. Writing tests after completion of the implementation allowed me to prioritise the most important functionality of the system and test that first, then move on to the less important parts once I was happy.
+
 \end{enumerate}
 %---------LO 2------------------------------------------
 \item \textbf{Design and implement comprehensive test plans with instrumented code} \marginpar{[default 20\%]}
