@@ -38,6 +38,9 @@ The system shall generate a series of paths that don't enter "no fly zones"
   F8 & The card verification subsystem shall correctly validate card numbers
     & high & just checking length, not performing the luhn algorithm\\
  \hline
+  F9 & The card verification subsystem shall correctly validate a card's CVV number
+    & high & just checking length\\
+ \hline
     \vdots & & \vdots & \vdots \\
   \hline
 \end{tabular}
@@ -60,5 +63,39 @@ The system shall generate a series of paths that don't enter "no fly zones"
  \vdots & & \vdots & \vdots \\
  \hline
 \end{tabular}
+\end{center}
+
+\section{Test Approach for chosen attributes}
+\begin{center}
+  \begin{tabular}{|c|p{12cm}|}
+    \hline
+    ID & Test Approach\\
+    \hline
+    \hline
+    F1 & Take the generated flight path and ensure that none of the moves generated cross the edge of a no fly zone\\
+    \hline
+    F2 & This shall be verified by testing \textit{F7}, \textit{F8} and \textit{F9}\\
+    \hline
+    F3 & Take the output file and count the number of moves taken. This should always be under 2000\\
+    \hline
+    F4 & Check that three unique files are created after running the program, all with different contents also\\
+    \hline
+    F5 & Verify that the program terminates after passing in valid input data\\
+    \hline
+    F6 & Hard to verify for all instances, potential approach is to just create a few test cases (including some edge cases) and check that these are handled correctly\\
+    \hline
+    F7 & l\\
+    \hline
+    F8 & l\\
+    \hline
+    Q1 & l\\
+    \hline
+    Q2 & l\\
+    \hline
+    Q3 & l\\
+    \hline
+    Q4 & l\\
+    \hline
+  \end{tabular}
 \end{center}
 \end{document}
