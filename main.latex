@@ -20,7 +20,7 @@
 \maketitle
 
 \section{Outline of the Software Being Tested}
-The software I will be testing is from my Informatics Large Practical project. This software (called PizzaDronz) is an online Pizza ordering system that uses drones to deliver pizza to students who are in Appleton Tower. The path the drone takes must avoid designated no fly zones which are usually open areas in which students tend to gather.
+The software I will be testing is from my Informatics Large Practical project. This software (called PizzaDronz) is an online pizza ordering system that uses drones to deliver pizza to students who are in Appleton Tower. The path the drone takes must avoid designated no fly zones which are usually open areas in which students tend to gather.
 The purpose of these no fly zones is to prevent collisions (with people) if the drone's hardware fails or the pizza boxes weren't correctly attached to the drone.
 The data for the no fly zones, restaurants and orders is retrieved from a central server which provides \texttt{.json} and \texttt{.geojson} files.
 The program then uses this data to construct a visibility graph of all of the restaurant locations and Appleton Tower.
@@ -50,7 +50,7 @@ However due to the constrained time I had on this project, it may not have been 
 
 \end{enumerate}
 %---------LO 2------------------------------------------
-\item \textbf{Design and implement comprehensive test plans with instrumented code} \marginpar{[default 20\%]}
+\item \textbf{Design and implement comprehensive test plans with instrumented code} \marginpar{[20\%]}
 \begin{enumerate}
 \item \textbf{Construction of the test plan}
 \item \textbf{Evaluation of the quality of the test plan}

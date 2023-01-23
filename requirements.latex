@@ -9,7 +9,7 @@
 \section{Functional Requirements}
 
 \begin{center}
-  \begin{tabular}{ |c|p{7cm}|c|p{3cm}| } 
+  \begin{tabular}{ |c|p{6cm}|c|p{4cm}| } 
  \hline
   ID & Requirement & Priority & Comments\\
 \hline \hline
@@ -23,7 +23,19 @@ The system shall generate a series of paths that don't enter "no fly zones"
   3 & The system shall generate a series of paths that total less than 2000 moves
     & high & \\ 
  \hline
-  4 & The system shall generate a file containing the paths taken for the day given when executing the program
+  4 & The system shall generate three files containing the paths taken for the day given when executing the program
+    & high & one containing the orders placed/delivered, one with the paths in a \texttt{.geojson} format and one with the paths in a \texttt{.json} format\\
+ \hline
+  5 & The system shall always exit after generating a flight path for a given day 
+    & high & \\
+ \hline
+  6 & The visibility graph shall always be correctly generated
+    & high & part of the pathfinding subsystem \\
+ \hline
+  7 & The system shall always exit after generating a flight path for a given day 
+    & high & \\
+ \hline
+  8 & The system shall always exit after generating a flight path for a given day 
     & high & \\
  \hline
     \vdots & & \vdots & \vdots \\
@@ -33,17 +45,17 @@ The system shall generate a series of paths that don't enter "no fly zones"
 
 \section{Qualitative Requirements}
 \begin{center}
-  \begin{tabular}{ |c|p{7cm}|c|p{3cm}| } 
+  \begin{tabular}{ |c|p{6cm}|c|p{4cm}| } 
  \hline
   ID & Requirement & Priority & Comments\\
 \hline \hline
-  1 &  &  & \\
+  1 & The system shall generate the necessary paths in under 2 minutes & high & \\
  \hline
-  2 &  &  & \\
+  2 & The system shall generate a valid path if a valid path exists & medium & \\
  \hline
-  3 &  &  & \\
+  3 & The system shall be available 95\% of the time & medium & \\
  \hline
-  4 &  &  & \\
+  4 & The system shall use no more than 4GB of system memory & low & \\
  \hline
  \vdots & & \vdots & \vdots \\
  \hline
