@@ -13,30 +13,30 @@
  \hline
   ID & Requirement & Priority & Comments\\
 \hline \hline
-  1 & 
+  F1 & 
 The system shall generate a series of paths that don't enter "no fly zones"
   & high & \\
 \hline
-  2 & The system shall correctly validate customer's card details 
+  F2 & The system shall correctly validate customer's card details 
     & high & Card number, expiry date and CVV\\ 
  \hline
-  3 & The system shall generate a series of paths that total less than 2000 moves
+  F3 & The system shall generate a series of paths that total less than 2000 moves
     & high & \\ 
  \hline
-  4 & The system shall generate three files containing the paths taken for the day given when executing the program
+  F4 & The system shall generate three files containing the paths taken for the day given when executing the program
     & high & one containing the orders placed/delivered, one with the paths in a \texttt{.geojson} format and one with the paths in a \texttt{.json} format\\
  \hline
-  5 & The system shall always exit after generating a flight path for a given day 
+  F5 & The system shall always exit after generating a flight path for a given day 
     & high & \\
  \hline
-  6 & The visibility graph shall always be correctly generated
+  F6 & The visibility graph shall always be correctly generated
     & high & part of the pathfinding subsystem \\
  \hline
-  7 & The system shall always exit after generating a flight path for a given day 
+  F7 & The card verification subsystem shall correctly validate expiry dates
     & high & \\
  \hline
-  8 & The system shall always exit after generating a flight path for a given day 
-    & high & \\
+  F8 & The card verification subsystem shall correctly validate card numbers
+    & high & just checking length, not performing the luhn algorithm\\
  \hline
     \vdots & & \vdots & \vdots \\
   \hline
@@ -49,13 +49,13 @@ The system shall generate a series of paths that don't enter "no fly zones"
  \hline
   ID & Requirement & Priority & Comments\\
 \hline \hline
-  1 & The system shall generate the necessary paths in under 2 minutes & high & \\
+  Q1 & The system shall generate the necessary paths in under 2 minutes & high & \\
  \hline
-  2 & The system shall generate a valid path if a valid path exists & medium & \\
+  Q2 & The system shall generate a valid path if a valid path exists & medium & \\
  \hline
-  3 & The system shall be available 95\% of the time & medium & \\
+  Q3 & The system shall be available 95\% of the time & medium & \\
  \hline
-  4 & The system shall use no more than 4GB of system memory & low & \\
+  Q4 & The system shall use no more than 4GB of system memory & low & \\
  \hline
  \vdots & & \vdots & \vdots \\
  \hline
