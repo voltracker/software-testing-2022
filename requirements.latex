@@ -84,17 +84,19 @@ The system shall generate a series of paths that don't enter "no fly zones"
     \hline
     F6 & Hard to verify for all instances, potential approach is to just create a few test cases (including some edge cases) and check that these are handled correctly\\
     \hline
-    F7 & l\\
+    F7 & check that the card expiry date is not before the current date\\
     \hline
-    F8 & l\\
+    F8 & Check that the length of the card number is exactly 16 digits long\\
     \hline
-    Q1 & l\\
+    F9 & Verify that the CVV is exactly 3 digits long\\
     \hline
-    Q2 & l\\
+    Q1 & Test the system on various inputs and ensure that the runtime \textbf{never} exceeds 2 minutes\\
     \hline
-    Q3 & l\\
+    Q2 & Find edge cases and test these as an input, making sure that the paths produced are valid\\
     \hline
-    Q4 & l\\
+    Q3 & Measure the uptime of the system and verify that it is up 95\% of the time\\
+    \hline
+    Q4 & Measure the amount of system memory used by the system and check that it never goes above 4GB\\
     \hline
   \end{tabular}
 \end{center}
