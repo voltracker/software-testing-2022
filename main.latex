@@ -34,14 +34,16 @@ This graph is used to path find from Appleton Tower to each of the restaurants. 
 \begin{enumerate}
   \item \textbf{Range of requirements, functional requirements, measurable quality attributes, qualitative requirements}
 
-    see \texttt{requirements.pdf}
+  See \texttt{requirements.pdf}
 \item \textbf{Level of requirements, system, integration, unit}
 
-  see \texttt{requirements.pdf}
+  See \texttt{requirements.pdf}
 \item \textbf{Identifying test approach for chosen attributes}
     
-I chose to test my project after having performed the design and implementation activities. 
-
+  See \texttt{requirements.pdf} for how I will test each requirement. Overall I will performing the testing activities after I have completed implementation. This is due to the time constraints of the project.
+    The project is due by the 14th of December, so completion of implementation takes priority.
+    Whatever time I have remaining after the implementation stage will be used for testing.
+    In an ideal world I would have taken a test driven development or DevOps approach, however due to an insufficient time budget, I couldn't take the time to write the tests beforehand or set up an automated pipeline for CI/CD.
 \item \textbf{Assess the appropriateness of your chosen testing approach}
 
 Ultimately this was an appropriate testing approach, as the specification had already been given to me and it was just a case of choosing how I wanted to structure the system and implement it. The chosen approach worked sufficiently however I think that choosing a test driven development approach may haveallowed me to be more productive as it allows me to measure my progress more readily and set deadlines accordingly.
