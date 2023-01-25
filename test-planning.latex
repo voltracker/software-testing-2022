@@ -10,7 +10,7 @@
 \begin{document}
   \maketitle
 
-  \section{Introduction}
+  Considering the requirements identified in \texttt{requirements.pdf},
 
   \section{Priority and Pre-requisites}
 
