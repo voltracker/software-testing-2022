@@ -10,17 +10,97 @@
 \begin{document}
   \maketitle
 
-  Considering the requirements F2, F7, F8, and F9, identified in \texttt{requirements.pdf}. F2 is a System level requirement, depending on correct implentation and integration of F7, F8 and F9. 
+  Consider the development of the payment subsystem from the PizzaDronz pizza delivery system, in which there are several requirements, however arguably the most important one is that all the card details inputted by the user are correct.
+  This was identified as the requirement with ID F2 in the requirements document (\texttt{requirements.pdf}), with the individual unit requirements having ID F7, F8 and F9.
+  These individual unit requirements identify the need to correctly verify the expiry date, the card number and the CVV number respectively.
 
 
   \section{Priority and Pre-requisites}
+    
     \subsection{F2}
       F2 is a system level requirement, identifying the need to correctly implement the credit card detail checking functionality of the system.
-    \subsection{F2}
-    \subsection{F2}
-    \subsection{F2}
-    \subsection{F2}
-  \section{Scaffolding and Instrumentation}
+      This is a crucial part of the system, as allowing incorrect payment details when ordering pizza could lead to a loss of revenue, and restaurants using our system to move to competitors.
+      Furthermore, payment systems are heavily regulated, so it is of upmost importance that these regulations are complied with to prevent fines or sanctions.
+      This suggests that we give this subsystem more of our time budget when testing, to ensure that we meet this requirement.
+      To reduce the amount of time spent overall on testing this system, we will use the partition principle to split the requirement into further unit requirements (F7, F8 and F9).
 
+      To test this requirement we need to know the inputs and outputs for the subsystem:
+    
+      \subsubsection{Inputs}
+        \begin{itemize}
+          \item \texttt{cardNumber} - String of integers containing a customer's card number
+          \item \texttt{expiryDate} - String containing the expiry date of the customer's card in the \texttt{MM/YY} format
+          \item \texttt{cvv} - String of integers containing the customer's card's cvv number
+        \end{itemize}
+      \subsubsection{Outputs}
+        \begin{itemize}
+          \item \texttt{cardValid} - True if the card details are valid
+        \end{itemize}
+      \subsubsection{Specification}
+        \begin{itemize}
+          \item \texttt{cardValid} is true only when \texttt{cardNumber},\texttt{expiryDate} and \texttt{cvv} are all valid, otherwise false.
+        \end{itemize}
+    
+    \subsection{F7}
+      
+      F7 is a unit level requirement that the card validation subsystem shall correctly validate customer's credit card expiry dates.
+      This is necessary to ensure that a card is not being used outwith it's lifespan and to ensure that payment can be collected from the customer.
+      This falls under the same high priority of F2 as it is part of the payment system.
+      Making the assumption that as long as the expiry date on the card is a month that happens after the current month, then it is valid ie. if the current month is 01/23 then a card with an expiry of 02/23 would be valid but one with an expiry of 01/23 would be invalid.
+
+      To validate this requirement we need to look at the inputs and outputs:
+      \subsubsection{Inputs}
+        \begin{itemize}
+          \item \texttt{expiryDate} - String containing the expiry date of the customer's card in the \texttt{MM/YY} format
+        \end{itemize}
+      \subsubsection{Outputs}
+        \begin{itemize}
+          \item \texttt{validExpiry} - True if the expiry date is valid
+        \end{itemize}
+      \subsubsection{Specification}
+        \begin{itemize}
+          \item \texttt{validExpiry} will be true if the expiry month is after the current one, otherwise, if it is the current month, before the current month or an invalid date it will be false.
+        \end{itemize}
+
+    \subsection{F8}
+      
+      F8 is a unit level requirement that the card validation subsystem shall correctly validate card numbers. This is necessary to ensure the user has entered a card that payment can be taken from and that they haven't entered something that isn't even a card number. Using the restriction principle I have made this easier by only validating the length of the card number and ensured that the entire string consists of digits.
+      Ideally the luhn algorithm would be implemented to ensure that the card number is valid, however due to strict time budget this wasn't possible.
+      
+      To validate this requirement we need to look at the inputs and outputs:
+      \subsubsection{Inputs}
+        \begin{itemize}
+          \item \texttt{cardNumber} - String containing the customer's card number as a string of digits
+        \end{itemize}
+      \subsubsection{Outputs}
+        \begin{itemize}
+          \item \texttt{validCardNumber} - True if the card number is valid
+        \end{itemize}
+      \subsubsection{Specification}
+        \begin{itemize}
+          \item \texttt{validCardNumber} will be true if the card number is exactly 16 digits long and all of the characters are a number (0-9), otherwise it will be false
+        \end{itemize}
+
+    \subsection{F9}
+      
+      F9 is a unit level requirement stating that the card validation subsystem shall correctly validate customer's CVV numbers.
+      This completes the payment card processing subsystem.
+      To validate the CVV number we check that it is a 3 or 4 character string consisting exclusively of digits 0-9.
+
+      \subsubsection{Inputs}
+        \begin{itemize}
+          \item \texttt{CVV} - String containing the customer's CVV as a string of digits
+        \end{itemize}
+      \subsubsection{Outputs}
+        \begin{itemize}
+          \item \texttt{validCVV} - True if the CVV is valid
+        \end{itemize}
+      \subsubsection{Specification}
+        \begin{itemize}
+          \item \texttt{validCVV} will be true if the CVV is exactly 3 or 4 digits long and all of the characters are a number (0-9), otherwise it will be false
+        \end{itemize}
+
+  \section{Scaffolding and Instrumentation}
+    
   \section{Process and Risk}
 \end{document}
