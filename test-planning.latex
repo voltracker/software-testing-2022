@@ -10,10 +10,16 @@
 \begin{document}
   \maketitle
 
-  Considering the requirements identified in \texttt{requirements.pdf},
+  Considering the requirements F2, F7, F8, and F9, identified in \texttt{requirements.pdf}. F2 is a System level requirement, depending on correct implentation and integration of F7, F8 and F9. 
+
 
   \section{Priority and Pre-requisites}
-
+    \subsection{F2}
+      F2 is a system level requirement, identifying the need to correctly implement the credit card detail checking functionality of the system.
+    \subsection{F2}
+    \subsection{F2}
+    \subsection{F2}
+    \subsection{F2}
   \section{Scaffolding and Instrumentation}
 
   \section{Process and Risk}
