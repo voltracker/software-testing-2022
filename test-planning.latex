@@ -101,6 +101,6 @@
         \end{itemize}
 
   \section{Scaffolding and Instrumentation}
-    
+    For the requirements outlined above, F2 will require the most extensive scaffolding if we plan to do extensive combinatorial testing.
   \section{Process and Risk}
 \end{document}
