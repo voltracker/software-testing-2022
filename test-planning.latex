@@ -101,6 +101,25 @@
         \end{itemize}
 
   \section{Scaffolding and Instrumentation}
-    For the requirements outlined above, F2 will require the most extensive scaffolding if we plan to do extensive combinatorial testing.
+    For the requirements outlined above, F2 will require the most extensive scaffolding if we plan to do extensive combinatorial testing. Otherwise F7-F9 should be relatively straight forward to test,
+    requiring a little bit of scaffolding for randomly generated outputs, as well as testing the boundary and incorrect input conditions. 
+
+  \begin{itemize}
+    \item To test F2, we require F7, F8 and F9 to be implemented, as well as the logic combining these. Then we need to test different combinations of correct or incorrect CVV numbers, card numbers and expiry dates. The tests should only pass when all three conditions are valid.
+    \item To test F7-F9 we require some scaffolding that will generate random valid and invalid inputs, as well as some cases that should definitely not work.
+  \end{itemize}
+
   \section{Process and Risk}
+
+  Ideally the above activities would be carried out early in the process so that any errors in the implementation can be identified and squashed as quickly as possible.
+  There are no real prerequisites for these tasks, only that a vague structure for the system has been identfied to allow testing.
+  However, due to the tight schedule for the project and a lack of people power, the implementation activities will be carried out first, and the testing later.
+  
+  This introduces a schedule risk, as if a large quantity of errors are found during the testing stage, then it may mean that a lot more time is spent fixing these errors than was spent
+  performing the implementation activities in the first place. There is also the risk that due to the tight schedule, little time is spent thoroughly testing the software, and so the final
+  product is found to have a number of severe bugs after delivery.
+
+  There is also a risk that the randomly generated input used to test the above requirements isn't representitive of what a real user would enter.
+  This could mean that users encounter bugs that were missed due to inadequate test data during development.
+  I think this is unlikely due to the nature of the functionality of what is being tested, however it is still a possibility.
 \end{document}
