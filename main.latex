@@ -46,7 +46,7 @@ This graph is used to path find from Appleton Tower to each of the restaurants. 
     In an ideal world I would have taken a test driven development or DevOps approach, however due to an insufficient time budget, I couldn't take the time to write the tests beforehand or set up an automated pipeline for CI/CD.
 \item \textbf{Assess the appropriateness of your chosen testing approach}
 
-Ultimately this was an appropriate testing approach, as the specification had already been given to me and it was just a case of choosing how I wanted to structure the system and implement it. The chosen approach worked sufficiently however I think that choosing a test driven development approach may haveallowed me to be more productive as it allows me to measure my progress more readily and set deadlines accordingly.
+Ultimately this was an appropriate testing approach, as the specification had already been given to me and it was just a case of choosing how I wanted to structure the system and implement it. The chosen approach worked sufficiently however I think that choosing a test driven development approach may have allowed me to be more productive as it allows me to measure my progress more readily and set deadlines accordingly.
 
 However due to the constrained time I had on this project, it may not have been feasible to write tests beforehand, as finishing the implementation was a higher priority than the overall correctness. Writing tests after completion of the implementation allowed me to prioritise the most important functionality of the system and test that first, then move on to the less important parts once I was happy.
 
@@ -55,18 +55,12 @@ However due to the constrained time I had on this project, it may not have been 
 \item \textbf{Design and implement comprehensive test plans with instrumented code} \marginpar{[25\%]}
 \begin{enumerate}
 \item \textbf{Construction of the test plan}
-
-  See \texttt{test-planning.pdf}.
 \item \textbf{Evaluation of the quality of the test plan}
-
-  See \texttt{test-planning.pdf}.
 \item \textbf{Instrumentation of the code}
-
-  See \texttt{test-planning.pdf}.
 \item \textbf{Evaluation of the instrumentation}
-
-  See \texttt{test-planning.pdf}.
 \end{enumerate}
+
+    See \texttt{test-planning.pdf} for all of LO2
 %---------LO 3------------------------------------------
 \item \textbf{Apply a wide variety of testing techniques and compute test coverage and yield according to a variety of criteria} \marginpar{[20\%]}
   see \texttt{code/tests} and \texttt{code/src} for the tests and source code respectively. The program will likely not run, as it has been pulled directly from my ILP project and I'm not sure if we're allowed to make our solutions public yet.

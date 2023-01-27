@@ -1,0 +1,49 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Define Article %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title & Author %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Software Testing Self Assessment}
+\author{Matthew Davidson}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+    \maketitle
+  \begin{enumerate}
+    \item Analyse requirements to determine appropriate testing strategies. \textbf{Mark: 4} 
+      \begin{enumerate}
+        \item Range of requirements, functional requirements, measurable quality attributes, qualitative requirements. \textbf{Mark: 4}
+        \item Level of requirements, system, integration, unit. \textbf{Mark: 4}
+        \item Identifying test approach for chosn attributes. \textbf{Mark: 3}
+        \item Assess the appropriateness of your chose testing approach. \textbf{Mark: 3}
+      \end{enumerate}
+    \item Design and implement comprehensive test plans with instrumented code. \textbf{Mark: 4}
+      \begin{enumerate}
+        \item Construction of test plan. \textbf{Mark: 4}
+        \item Evaluation of the quality of the test plan. \textbf{Mark: 2}
+        \item Instrumentation of the code. \textbf{Mark: 5}
+        \item Evaluation of the instrumentation. \textbf{Mark: 2}
+      \end{enumerate}
+    \item Apply a wide variety of testing techniques and compute test coverage and yield according to a variety of criteria. \textbf{Mark: 5}
+      \begin{enumerate}
+        \item Range of techniques. \textbf{Mark: 3}
+        \item Evaluation criteria for the adequacy of the testing. \textbf{Mark: 4}
+        \item Results of testing. \textbf{Mark: 5}
+        \item Evaluation of the results. \textbf{Mark: 3}
+      \end{enumerate}
+    \item Evaluate the limitations of a given testing process, using statistical methods where appropriate and summarise outcomes. \textbf{Mark: 3}
+      \begin{enumerate}
+        \item Identifying gaps and omission in the testing process. \textbf{Mark: 4}
+        \item Identifying target coverage/performance levels for the different testing procedures. \textbf{Mark: 3}
+        \item Discussing how the testing carried out compares with the target levels. \textbf{Mark: 4}
+        \item Discussion of what would be necessary to achieve the target levels. \textbf{Mark: 3}
+      \end{enumerate}
+    \item Conduct reviews and inspection and design and implement automated testing processes. \textbf{Mark: 4}
+      \begin{enumerate}
+        \item Identify and apply review criteria to selected parts of the code and identify issues in the code. \textbf{Mark: 3}
+        \item Construct an appropriate CI pipeline for the software. \textbf{Mark: 5}
+        \item Automate some aspects of the testing. \textbf{Mark: 4}
+        \item Demonstrate the CI pipeline functions as expected. \textbf{Mark: 4}
+      \end{enumerate}
+  \end{enumerate}
+\end{document}
