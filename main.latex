@@ -52,7 +52,7 @@ However due to the constrained time I had on this project, it may not have been 
 
 \end{enumerate}
 %---------LO 2------------------------------------------
-\item \textbf{Design and implement comprehensive test plans with instrumented code} \marginpar{[20\%]}
+\item \textbf{Design and implement comprehensive test plans with instrumented code} \marginpar{[25\%]}
 \begin{enumerate}
 \item \textbf{Construction of the test plan}
 
@@ -84,7 +84,7 @@ However due to the constrained time I had on this project, it may not have been 
   
 \end{enumerate}
 %---------LO 4------------------------------------------
-\item \textbf{Evaluate the limitations of a given testing process, using statistical methods where appropriate, and summarise outcomes} \marginpar{[default 20\%]}
+\item \textbf{Evaluate the limitations of a given testing process, using statistical methods where appropriate, and summarise outcomes} \marginpar{[15\%]}
 \begin{enumerate}
 \item \textbf{Identifying gaps and omissions in the testing process}
 
@@ -114,12 +114,32 @@ However due to the constrained time I had on this project, it may not have been 
 \end{itemize}
 \end{enumerate}
 %---------LO 5------------------------------------------
-\item \textbf{Conduct reviews, inspections, and design and implement automated testing processes} \marginpar{[default 20\%]}
+\item \textbf{Conduct reviews, inspections, and design and implement automated testing processes} \marginpar{[20\%]}
 \begin{enumerate}
 \item \textbf{Identify and apply review criteria to selected parts of the code and identify issues in the code}
+  \begin{itemize}
+    \item Meaningful variable names: throughout the codebase meaningful variable names have been used as often as possible in order to maximise readability for markers and reviewers.
+    \item Data errors considered: There are a fundemental lack of tests for some parts of the codebase, however for the parts that do have tests there are wide reaching tests.
+    \item Exceptions handled: Throughout the codebase exceptions are handled as often as possible in order to prevent hard crashes which may confuse or frustrate users.
+    \item Consistent use of types: Various types are introduced throughout the codebase and these are named as conventionally as possible
+    \item Proper formatting: the code has been formatted consitently throughout in order to maintain readability and allow other developers to edit the code with minimal confusion.
+  \end{itemize}
 \item \textbf{Construct an appropriate CI pipeline for the software}
+
+  For this system an appropriate CI pipeline would consist of automated integration testing of the feature branch that is being worked on. After commiting changes to the branch, the changes will initally be subject to a set of appropriate unit tests. If these tests are passed to a satisfactory level, then the changes reach the integration stage, where a set of integration tests are performed.
+    If these too pass a satisfactory number of tests, then the changes reach the review stage, where a reviewer manually reviews the changes and ensures they are approptiate.
+    If these changes are suitable to be merged, then they will be merged into the main branch.
+    Otherwise the reviewer will communicate with the programmer the changes that are required and what was wrong with what was submitted.
 \item\textbf{Automate some aspects of the testing}
+  
+  Testing should be embedded throughout the pipeline to ensure that buggy code isn't reaching production.
+  Suitable tests would consist of thorough unit tests for the feature being worked on, as well as relevant integration and system level tests.
+  If the changes are relatively minor, it may not be necessary to perform wide reaching system level tests as this would be a waste of computational resources.
 \item \textbf{Demonstrate the CI pipeline functions as expected}
+
+  The proposed CI pipeline would identify errors that are caught by the tests written, however if the quality of the tests isn't sufficient then the system doesn't really work.
+  If system level tests are frequently failing then this suggests insufficient unit and integration level tests. However if unit tests are failing and the system level tests are passing then this suggests that the system level tests need improvement.
+  Ideally if the unit tests are correct and submitted code is incorrect then the pipeline would notify the programmer that their submission had failed the tests and provide some information as to which tests failed and potentially the cause of the fault, allowing them to quickly identify the problem and fix with minimal stress.
 \end{enumerate}
 \end{enumerate}
 \end{document}
