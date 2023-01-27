@@ -55,25 +55,63 @@ However due to the constrained time I had on this project, it may not have been 
 \item \textbf{Design and implement comprehensive test plans with instrumented code} \marginpar{[20\%]}
 \begin{enumerate}
 \item \textbf{Construction of the test plan}
+
+  See \texttt{test-planning.pdf}.
 \item \textbf{Evaluation of the quality of the test plan}
+
+  See \texttt{test-planning.pdf}.
 \item \textbf{Instrumentation of the code}
+
+  See \texttt{test-planning.pdf}.
 \item \textbf{Evaluation of the instrumentation}
+
+  See \texttt{test-planning.pdf}.
 \end{enumerate}
 %---------LO 3------------------------------------------
-\item \textbf{Apply a wide variety of testing techniques and compute test coverage and yield according to a variety of criteria} \marginpar{[default 20\%]}
+\item \textbf{Apply a wide variety of testing techniques and compute test coverage and yield according to a variety of criteria} \marginpar{[20\%]}
+  see \texttt{code/tests} and \texttt{code/src} for the tests and source code respectively. The program will likely not run, as it has been pulled directly from my ILP project and I'm not sure if we're allowed to make our solutions public yet.
 \begin{enumerate}
 \item\textbf{Range of techniques}
 \item\textbf{Evaluation criteria for the adequacy of the testing}
+
+  These tests use a simplified version of the card validation system, without dealing with the order objects. The tests are mostly optimistic. Issues in my code may avoid detection to the non-exaustive nature of my testing, ideally I would test every combination of valid and invalid card numbers, CVVs and expiry dates.
 \item \textbf{Results of testing}
+
+  After running 194 tests, 100\% passed. Also see the \texttt{test-log.pdf}.
 \item \textbf{Evaluation of the results}
+
+  These results are useful as it validates the logic of the card validation system. Despite being simplifed (by avoiding the use of Order objects, etc.) it still demonstrates that the core logic is correct.
+  
 \end{enumerate}
 %---------LO 4------------------------------------------
 \item \textbf{Evaluate the limitations of a given testing process, using statistical methods where appropriate, and summarise outcomes} \marginpar{[default 20\%]}
 \begin{enumerate}
 \item \textbf{Identifying gaps and omissions in the testing process}
+
+  A lack of extensive testing for the whole order validation class is a significant omission from the testing process, as ideally each step of the process from taking an order to handing the result of the validation to other parts of the system should be tested. To remedy this, we need to identify the inputs to each of the methods in the order validation class and work out what the correct outputs should look like.
+  Furthermore, we should gather some sample data for orders in order to get a clear picture of the type of data users will be entering, whether is be valid or invalid.
+  Randomly generated data is sufficient for quick and dirty testing but users are unpredictable creatures and so real world inputs are better to ensure long-term reliability.
+
+  A lack of development resource has meant that considerably less time has been spent of testing and evaluation activities than intended.
+  To remedy this, a more concrete plan along with setting goals for developers would allow more simple progress checking. Furthermore identifying more sound requirements and deliverables would allow developers to plan the structure of the system better, and write more conscise code.
 \item \textbf{Identifying target coverage/performance levels for the different testing procedures} 
+
+  Ideally I am looking for 100\% line/branch coverage in the functionality I am testing, as these are relatively simple functions with few dependencies.
+  For the qualitative requirements identified, I am mainly focussed on meeting Q1, as this has the highest priority.
+  The limit of 2 minutes runtime was set as this is one of the requirements identified in the course specification.
+  This will be measured by timing how long it takes from execution of the program to program exiting.
+
 \item \textbf{Discussing how the testing carried out compares with the target levels}
+
+  Upon testing F2/F7-9, I found that 100\% line coverage was met for the functions related to these requirements. 
+
+  For testing Q1, I found that the execution time of the program never really breached 1 minute.
 \item \textbf{Discussion of what would be necessary to achieve the target level}
+
+\begin{itemize}
+  \item Q3: monitor the system's status and ensure that the system is up 95\% of the time. If this requirement is failing to be met, investigate what is causing the system to crash and implement functionality to improve the ability to recover from a degraded or failing state.
+  \item Q4: monitor the system's RAM usage, if this figure ever goes over 4GB then we could profile the code to see which data structures/operations are using the most memory. Alternative data structures could then be considered, perhaps reducing the memory usage at the cost of speed. A balance would have to be struck between memory usage and execution time.
+\end{itemize}
 \end{enumerate}
 %---------LO 5------------------------------------------
 \item \textbf{Conduct reviews, inspections, and design and implement automated testing processes} \marginpar{[default 20\%]}
