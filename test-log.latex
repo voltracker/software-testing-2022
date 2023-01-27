@@ -1,0 +1,24 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Define Article %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title & Author %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{PizzaDronz Test Log}
+\author{Matthew Davidson}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+    \maketitle
+  \begin{center}
+  
+    \begin{tabular}{|c|p{5cm}|p{5cm}|}
+      \hline
+      Requirement & Issue & Fix \\ \hline \hline
+      F8 & Function is only checking length of string, not that all characters are digits & Change length check to a regex that only matches digits of length 16 \\ \hline
+      F8 & no issue, fully completed tests, all pass. & n/a \\ \hline 
+      F7 & Test kept failing due to an invalid date when it should have been valid. When generating random dates, they were being passed in with the format \texttt{9/23} or \texttt{2/23} rather than \texttt{09/23} or \texttt{02/23} & prepend a \texttt{0} when the generated month was less than \texttt{10} \\ \hline
+      F7 & no issue, fully completed tests, all pass. & n/a \\ \hline 
+      F9 & no issue, fully completed tests, all pass. & n/a \\ \hline 
+      F2 & no issue, fully completed tests, all pass. & n/a \\ \hline 
+    \end{tabular}
+  \end{center}
+\end{document}
